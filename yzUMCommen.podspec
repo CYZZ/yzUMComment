@@ -91,8 +91,10 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-s.source_files = "myClass/*"
+  # 需要包含的头文件
+# s.source_files = "myClass/UMCommon.framework/Versions/A/Headers/*"
+  # 你的SDK路径
+s.vendored_frameworks = "myClass/UMCommon.framework"
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
@@ -123,7 +125,7 @@ s.source_files = "myClass/*"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries = "sqlite3", "z"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
