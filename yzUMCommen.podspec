@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   # 需要包含的头文件
   # s.source_files = "myClass/UMCommon.framework/Versions/A/Headers/*"
   # 你的SDK路径
-  s.vendored_frameworks = "UMCommon/UMCommon.framework", "UMCSecurityPlugins/thirdparties/SecurityEnvSDK.framework","UMCSecurityPlugins/thirdparties/UTDID.framework"
+  s.ios.vendored_frameworks = "UMCommon/UMCommon.framework", "UMCSecurityPlugins/thirdparties/SecurityEnvSDK.framework","UMCSecurityPlugins/thirdparties/UTDID.framework"
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
