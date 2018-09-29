@@ -92,9 +92,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
   # 需要包含的头文件
-# s.source_files = "myClass/UMCommon.framework/Versions/A/Headers/*"
+  # s.source_files = "myClass/UMCommon.framework/Versions/A/Headers/*"
   # 你的SDK路径
-s.vendored_frameworks = "myClass/UMCommon.framework"
+  s.vendored_frameworks = "UMCommon/UMCommon.framework", "UMCSecurityPlugins/thirdparties/SecurityEnvSDK.framework","UMCSecurityPlugins/thirdparties/UTDID.framework"
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
@@ -123,7 +123,7 @@ s.vendored_frameworks = "myClass/UMCommon.framework"
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
-
+  s.frameworks = "CoreTelephony","SystemConfiguration"
   # s.library   = "iconv"
   s.libraries = "sqlite3", "z"
 
